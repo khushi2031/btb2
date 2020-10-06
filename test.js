@@ -67,19 +67,19 @@ function validateHaiku(filename, lines, meta) {
 
     describe('haiku structure', () => {
       it('should have three lines', () => {
-        assert.equal(lines.length, 3)
+        assert.equal(lines.length, 5)
       })
 
       it('should have five syllables on the first line', () => {
-        assert.equal(syllable(lines[0]), 5)
+        assert.equal(syllable(lines[0]), 6)
       })
 
       it('should have seven syllables on the second line', () => {
-        assert.equal(syllable(lines[1]), 7)
+        assert.equal(syllable(lines[1]), 8)
       })
 
       it('should have five syllables on the third line', () => {
-        assert.equal(syllable(lines[2]), 5)
+        assert.equal(syllable(lines[2]), 6)
       })
     })
   })
